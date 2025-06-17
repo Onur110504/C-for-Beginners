@@ -4,12 +4,17 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter your age: ");
-        int age = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter a number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
 
-        if (age < 18)
-            Console.WriteLine("You are under age");
+        if (number > 0)
+        {
+            int square = number * number;
+            Console.WriteLine("Square: " + square);
+        }
         else
-            Console.WriteLine("Enter the site");
+        {
+            Console.WriteLine("Number is not positive.");
+        }
     }
 }
