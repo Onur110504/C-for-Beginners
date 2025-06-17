@@ -4,14 +4,12 @@ class Program
 {
     static void Main()
     {
-        string greeting = "Hello";
-        string name = "World";
+        Console.Write("Enter your age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
 
-        string message = greeting + ", " + name + "!";
-        Console.WriteLine(message);
-
-        Console.WriteLine("Length of greeting: " + greeting.Length);
-
-        Console.WriteLine("Uppercase name: " + name.ToUpper());
+        if (age < 18)
+            Console.WriteLine("You are under age");
+        else
+            Console.WriteLine("Enter the site");
     }
 }
