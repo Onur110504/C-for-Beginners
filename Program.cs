@@ -4,11 +4,14 @@ class Program
 {
     static void Main()
     {
-        int[] numbers = { 10, 20, 30, 40, 50 };
+        string greeting = "Hello";
+        string name = "World";
 
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.WriteLine(numbers[i]);
-        }
+        string message = greeting + ", " + name + "!";
+        Console.WriteLine(message);
+
+        Console.WriteLine("Length of greeting: " + greeting.Length);
+
+        Console.WriteLine("Uppercase name: " + name.ToUpper());
     }
 }
