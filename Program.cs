@@ -2,21 +2,13 @@
 
 class Program
 {
-    static int Add(int a, int b)
-    {
-        return a + b;
-    }
-
-    static void SayHello(string name)
-    {
-        Console.WriteLine("Hello, " + name + "!");
-    }
-
     static void Main()
     {
-        int result = Add(5, 7);
-        Console.WriteLine("Addition result: " + result);
+        int[] numbers = { 10, 20, 30, 40, 50 };
 
-        SayHello("Ahmet");
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine(numbers[i]);
+        }
     }
 }
