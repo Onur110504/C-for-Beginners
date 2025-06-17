@@ -1,38 +1,21 @@
-﻿using System;
-
-class Program
+﻿Console.WriteLine("For loop:");
+for (int i = 1; i <= 5; i++)
 {
-    static void Main()
-    {
-        Console.Write("Enter a number (1 to 7): ");
-        int day = Convert.ToInt32(Console.ReadLine());
-
-        switch (day)
-        {
-            case 1:
-                Console.WriteLine("Monday");
-                break;
-            case 2:
-                Console.WriteLine("Tuesday");
-                break;
-            case 3:
-                Console.WriteLine("Wednesday");
-                break;
-            case 4:
-                Console.WriteLine("Thursday");
-                break;
-            case 5:
-                Console.WriteLine("Friday");
-                break;
-            case 6:
-                Console.WriteLine("Saturday");
-                break;
-            case 7:
-                Console.WriteLine("Sunday");
-                break;
-            default:
-                Console.WriteLine("Invalid day number");
-                break;
-        }
-    }
+    Console.WriteLine("i = " + i);
 }
+
+Console.WriteLine("\nWhile loop:");
+int j = 1;
+while (j <= 5)
+{
+    Console.WriteLine("j = " + j);
+    j++;
+}
+
+Console.WriteLine("\nDo-while loop:");
+int k = 1;
+do
+{
+    Console.WriteLine("k = " + k);
+    k++;
+} while (k <= 5);
