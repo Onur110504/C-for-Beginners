@@ -4,16 +4,35 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter your age: ");
-        int age = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter a number (1 to 7): ");
+        int day = Convert.ToInt32(Console.ReadLine());
 
-        if (age < 18)
+        switch (day)
         {
-            Console.WriteLine("You are under age");
-        }
-        else
-        {
-            Console.WriteLine("Enter the site");
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+            case 2:
+                Console.WriteLine("Tuesday");
+                break;
+            case 3:
+                Console.WriteLine("Wednesday");
+                break;
+            case 4:
+                Console.WriteLine("Thursday");
+                break;
+            case 5:
+                Console.WriteLine("Friday");
+                break;
+            case 6:
+                Console.WriteLine("Saturday");
+                break;
+            case 7:
+                Console.WriteLine("Sunday");
+                break;
+            default:
+                Console.WriteLine("Invalid day number");
+                break;
         }
     }
 }
