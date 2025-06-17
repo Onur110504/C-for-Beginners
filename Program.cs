@@ -1,21 +1,22 @@
-﻿Console.WriteLine("For loop:");
-for (int i = 1; i <= 5; i++)
-{
-    Console.WriteLine("i = " + i);
-}
+﻿using System;
 
-Console.WriteLine("\nWhile loop:");
-int j = 1;
-while (j <= 5)
+class Program
 {
-    Console.WriteLine("j = " + j);
-    j++;
-}
+    static int Add(int a, int b)
+    {
+        return a + b;
+    }
 
-Console.WriteLine("\nDo-while loop:");
-int k = 1;
-do
-{
-    Console.WriteLine("k = " + k);
-    k++;
-} while (k <= 5);
+    static void SayHello(string name)
+    {
+        Console.WriteLine("Hello, " + name + "!");
+    }
+
+    static void Main()
+    {
+        int result = Add(5, 7);
+        Console.WriteLine("Addition result: " + result);
+
+        SayHello("Ahmet");
+    }
+}
