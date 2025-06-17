@@ -4,14 +4,24 @@ class Program
 {
     static void Main()
     {
-        string name = "Onur";
-        int age = 21;
-        double height = 1.83;
-        bool isStudent = true;
+        int a = 55;
+        int b = 5;
 
-        Console.WriteLine("Name: " + name);
-        Console.WriteLine("Age: " + age);
-        Console.WriteLine("Height: " + height + " m");
-        Console.WriteLine("Are you a student? " + isStudent);
+        int sum = a + b;
+        int diff = a - b;
+        int product = a * b;
+        double division = (double)a / b;
+
+        bool isEqual = (a == b);
+        bool isGreater = (a > b);
+        bool isLessOrEqual = (a <= b);
+
+        Console.WriteLine("Sum: " + sum);
+        Console.WriteLine("Difference: " + diff);
+        Console.WriteLine("Product: " + product);
+        Console.WriteLine("Division: " + division);
+        Console.WriteLine("Is Equal? " + isEqual);
+        Console.WriteLine("Is Greater? " + isGreater);
+        Console.WriteLine("Is Less or Equal? " + isLessOrEqual);
     }
 }
