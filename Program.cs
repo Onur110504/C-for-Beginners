@@ -1,20 +1,21 @@
 ﻿using System;
 
-class Program
+class Example12
 {
     static void Main()
     {
-        Console.Write("Enter a number: ");
-        int number = Convert.ToInt32(Console.ReadLine());
+        double radius = 0;
+        do
+        {
+            Console.Write("Enter radius (must be > 0): ");
+            string input = Console.ReadLine();
+            double.TryParse(input, out radius);
+        } while (radius <= 0);
 
-        if (number > 0)
-        {
-            int square = number * number;
-            Console.WriteLine("Square: " + square);
-        }
-        else
-        {
-            Console.WriteLine("Number is not positive.");
-        }
+        double area = Math.PI * radius * radius;
+        double circumference = 2 * Math.PI * radius;
+
+        Console.WriteLine("Area: " + area);
+        Console.WriteLine("Circumference: " + circumference);
     }
 }
