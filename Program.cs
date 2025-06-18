@@ -1,21 +1,22 @@
 ﻿using System;
 
-class Example12
+class EvenOddCheck
 {
     static void Main()
     {
-        double radius = 0;
-        do
+        Console.Write("Enter a number: ");
+        string? input = Console.ReadLine();
+
+        if (!string.IsNullOrEmpty(input) && int.TryParse(input, out int number))
         {
-            Console.Write("Enter radius (must be > 0): ");
-            string input = Console.ReadLine();
-            double.TryParse(input, out radius);
-        } while (radius <= 0);
-
-        double area = Math.PI * radius * radius;
-        double circumference = 2 * Math.PI * radius;
-
-        Console.WriteLine("Area: " + area);
-        Console.WriteLine("Circumference: " + circumference);
+            if (number % 2 == 0)
+                Console.WriteLine("Even number");
+            else
+                Console.WriteLine("Odd number");
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+        }
     }
 }
